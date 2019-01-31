@@ -1,0 +1,40 @@
+= 何か書く／作る
+
+== gitコマンド一覧
+
+clone::
+リモートリポジトリの新規コピーを行う +
+``git clone https://github.com/puruneko/sevenBridge_game.git``
+
+add::
+ローカルリポジトリに対してステージングを行う +
+``git add .``
+
+commit::
+ローカルリポジトリに対してコミットを行う +
+``git commit -a -m "コミットメッセージ"``
+
+push::
+リモートリポジトリに対して、ローカルリポジトリのコミットをマージさせる +
+``git push``
+
+pull::
+ローカルリポジトリに対して、リモートリポジトリのコミットをマージさせる +
+``git pull``
+
+config::
+gitの設定の確認・変更を行う
++
+.パラメータ
+* user.email：メールアドレス
+* user.name：表示ユーザ名
+
++
+.オプション
+* system：現在のマシンに対して適用する
+* global：現在のOSログインユーザに対して適用する
+* local：現在のリポジトリに対して適用する
+
++
+``git config --global user.name 設定したいユーザ名``
+
